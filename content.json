@@ -15,7 +15,8 @@
     "paragraphs": [
       "Senior Application Architect turned founder, with 7+ years building data platforms, automation systems, and user\u2011friendly web applications in finance and data\u2011centric environments.",
       "I bridge business goals with engineering reality\u2014clarifying the \u2018why\u2019, designing the \u2018how\u2019, and implementing solutions that last.",
-      "Skills: Python, JavaScript (React/Next.js), SQL, AI model integration, and native iOS development with SwiftUI."
+      "Skills: Python, JavaScript (React/Next.js), SQL, AI model integration, and native iOS development with SwiftUI.",
+      "Experienced leading cloud data migrations on **Azure** and **AWS**\u2014from discovery and architecture to secure cutover and optimization."
     ]
   },
   "services": {
@@ -49,6 +50,15 @@
         ]
       },
       {
+        "title": "Cloud Data Migrations (Azure / AWS)",
+        "summary": "Plan and execute migrations with zero\u2011drama cutovers and measurable ROI.",
+        "bullets": [
+          "Discovery & migration plan (RTO/RPO, dependencies, runbooks)",
+          "Schema & pipeline re\u2011platforming (Azure SQL/Synapse/Databricks \u00b7 AWS RDS/Redshift/Glue)",
+          "Networking/IAM/Secrets (Key Vault/KMS), IaC (Bicep/Terraform), observability & rollback"
+        ]
+      },
+      {
         "title": "Business Discovery & Consulting",
         "summary": "Understand needs before writing a line of code.",
         "bullets": [
@@ -74,6 +84,10 @@
       {
         "title": "Enterprise Data Modernization",
         "summary": "Optimized ETL pipelines (Presto/Oracle) to cut runtime from ~2 weeks to 4 days with reliability and observability improvements."
+      },
+      {
+        "title": "Cloud Data Migration Program (Azure/AWS)",
+        "summary": "Lift\u2011and\u2011elevate approach: staged syncs, parallel validation, secure secrets and IAM, and final cutover with monitored rollback."
       },
       {
         "title": "Analytics\u2011Enabled Portals",

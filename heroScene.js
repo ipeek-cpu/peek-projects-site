@@ -1,4 +1,4 @@
-// heroScene.js — Orbital Core (same as earlier lightweight version)
+// heroScene.js — Orbital Core
 export function initHeroScene(canvas){
   const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
   const DPR = Math.min(window.devicePixelRatio || 1, 1.75);
