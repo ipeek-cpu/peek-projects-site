@@ -1,156 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peek Projects LLC - Where Engineering Meets Understanding. Building intelligent, data-driven solutions.">
-    <title>Peek Projects LLC - Engineering & Business Intelligence</title>
-    
-    <!-- Preload critical assets -->
-    <script type="text/javascript" nonce="018f03de5d52498d88bc4a39bf5" src="//local.adguard.org?ts=1759796589760&amp;type=content-script&amp;dmn=private-us-east-1.manuscdn.com&amp;url=https%3A%2F%2Fprivate-us-east-1.manuscdn.com%2FsessionFile%2FXK0BTTR1WfwwUD5j6gqnr0%2Fsandbox%2FPXAPYBSgkYtGUEMzXOMYlS_1759795195290_na1fn_aW5kZXg.html%3FPolicy%3DeyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvWEswQlRUUjFXZnd3VUQ1ajZncW5yMC9zYW5kYm94L1BYQVBZQlNna1l0R1VFTXpYT01ZbFNfMTc1OTc5NTE5NTI5MF9uYTFmbl9hVzVrWlhnLmh0bWwiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__%26Key-Pair-Id%3DK2HSFNDJXOU9YS%26Signature%3Dn-v4WRllhhmr8Ih3sLNlLdY2MOoeOhotCy0BqG-oyHR9vdSf0Sa8wQ-bj-NyOywNvKDPPpQSGDgjfLLfahYnv4Ed0v1tON8gXk5Fq1-XhWqJ1Qa37UJVYVXmzguceR2paK5Wzq2meEL6Q-RhAF8RYsXt0WQX5xE604GDEd-jB9PYBRFpidyZV-xC2Sx2e2ye0NDqZrdawEqG1qHehWR9ebEuOnRiF9mT16xoDvyyJ22VldLVyQClgPZ0DPDandgQwwQe3cgUaYMSOEd5s02gxI3vm7jBA3MopJvryMTtw0cvj472~-0kGu-9gDauf3cfgH18XDaJR5NmZkj3YYDoBg__&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-push&amp;st-loc&amp;st-java&amp;st-dnt"></script><script type="text/javascript" nonce="018f03de5d52498d88bc4a39bf5" src="//local.adguard.org?ts=1759796589760&amp;name=Web%20of%20Trust&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Peek Projects — Where Engineering Meets Understanding</title>
+<meta name="description" content="Peek Projects helps businesses translate vision into intelligent, data‑driven solutions. Web & iOS development, AI integrations, data architecture, and business consulting."/>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#FF7B00;--bg:#fff;--fg:#111827;--muted:#6B7280;--card:#F9FAFB;--ring:rgba(255,123,0,.3)}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--fg);background:var(--bg)}
+a{color:var(--accent);text-decoration:none}a:focus,button:focus{outline:3px solid var(--ring);outline-offset:3px}
+.container{max-width:1120px;margin-inline:auto;padding:0 20px}header{position:sticky;top:0;z-index:40;backdrop-filter:saturate(120%) blur(6px);background:color-mix(in oklab, white 85%, transparent)}
+header .inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.brand-badge{inline-size:28px;block-size:28px;border-radius:8px;background:var(--accent)}nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+nav a{color:var(--fg);font-weight:600}nav a:hover{opacity:.8}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:#111;color:#fff;padding:10px 14px;border-radius:10px}
+.hero{position:relative;min-block-size:88svh;display:grid;align-items:center}.hero canvas,.hero .fallback{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero .fallback{object-fit:cover;filter:contrast(1.05) saturate(1.02)}.hero-overlay{position:relative;z-index:2;padding:80px 0 64px}
+.kicker{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:.8rem;font-weight:700}h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:.35em 0}
+.sub{max-width:60ch;color:#364152}.cta{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:12px 18px;border-radius:14px;background:var(--accent);color:#fff;font-weight:700;border:0;cursor:pointer}
+section{padding:80px 0}.section-title{font-size:clamp(24px,3.2vw,36px);margin:0 0 16px}.muted{color:var(--muted)}
+.grid{display:grid;gap:22px}@media (min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid #eee;border-radius:16px;padding:20px}.card h3{margin:0 0 6px}ul.clean{margin:8px 0 0 18px;padding:0}
+footer{padding:40px 0 60px;background:#0B0D12;color:#C7CBD1}footer a{color:#fff}@media (prefers-reduced-motion:reduce){.parallax{transform:none !important}}
+</style>
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip">Skip to content</a>
+<header><div class="container inner"><div class="brand" aria-label="Peek Projects"><span class="brand-badge" aria-hidden="true"></span><span>Peek Projects</span></div>
+<nav aria-label="Primary"><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#process">Process</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
 
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="#hero">Peek Projects</a>
-            </div>
-            <ul class="nav-menu" role="list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+<section class="hero" aria-label="Hero 3D">
+  <img class="fallback" src="assets/hero-fallback.jpg" alt="Abstract orbital network background"/>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-overlay container">
+    <p class="kicker">Consulting · Engineering · AI</p>
+    <h1>Where Engineering Meets Understanding.</h1>
+    <p class="sub">Peek Projects helps businesses translate vision into intelligent, data‑driven solutions. We design and build modern web & iOS apps, integrate AI, and architect data systems that scale.</p>
+    <a class="cta" href="#contact" role="button" aria-label="Get Started">Get Started →</a>
+  </div>
+</section>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-3d-container" id="hero-3d-container" aria-hidden="true">
-                <!-- Three.js canvas will be inserted here -->
-            </div>
-            <div class="hero-fallback" id="hero-fallback">
-                <img src="assets/hero-fallback.jpg" alt="" aria-hidden="true">
-            </div>
-            <div class="hero-content">
-                <h1 class="hero-headline" id="hero-headline"></h1>
-                <p class="hero-subtext" id="hero-subtext"></p>
-                <a href="#contact" class="hero-cta" id="hero-cta">Get Started</a>
-            </div>
-        </section>
+<main id="main">
+<section id="about" class="container"><h2 class="section-title">About Isaiah Peek</h2>
+<p class='muted'>Senior Application Architect turned founder, with 7+ years building data platforms, automation systems, and user‑friendly web applications in finance and data‑centric environments.</p><p class='muted'>I bridge business goals with engineering reality—clarifying the ‘why’, designing the ‘how’, and implementing solutions that last.</p><p class='muted'>Skills: Python, JavaScript (React/Next.js), SQL, AI model integration, and native iOS development with SwiftUI.</p>
+</section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2 class="section-title" id="about-title">About Isaiah Peek</h2>
-                <div class="about-content">
-                    <div class="about-text" id="about-text">
-                        <!-- Content loaded from JSON -->
-                    </div>
-                    <blockquote class="about-tagline" id="about-tagline">
-                        <!-- Tagline loaded from JSON -->
-                    </blockquote>
-                </div>
-            </div>
-        </section>
+<section id="services" class="container"><h2 class="section-title">Services</h2>
+<div class="grid cols-3">
+<article class='card'><h3>Web & App Development</h3><p class='muted'>Responsive, accessible web experiences and native iOS apps.</p><ul class='clean'><li>React/Next.js front‑ends with clean design systems</li><li>REST/GraphQL APIs and authentication</li><li>SwiftUI iOS apps with modern patterns</li></ul></article><article class='card'><h3>AI Integrations & Automation</h3><p class='muted'>Embed intelligence where it drives outcomes.</p><ul class='clean'><li>Chatbots and assistants (OpenAI/Claude/custom)</li><li>Summarization, extraction, and knowledge search</li><li>Agent workflows and internal tooling automation</li></ul></article><article class='card'><h3>Data & System Architecture</h3><p class='muted'>Connect systems, reduce toil, and make insights routine.</p><ul class='clean'><li>ETL/ELT design and orchestration</li><li>Power BI/Fabric and data modeling</li><li>Azure/AWS integration and security patterns</li></ul></article><article class='card'><h3>Business Discovery & Consulting</h3><p class='muted'>Understand needs before writing a line of code.</p><ul class='clean'><li>Process mapping and automation audits</li><li>Technical strategy & roadmap documents</li><li>ROI framing and phased delivery plans</li></ul></article><article class='card'><h3>UX Prototyping & Product Design</h3><p class='muted'>Reduce risk with tangible prototypes.</p><ul class='clean'><li>Figma wireframes and clickable demos</li><li>Usability testing loops</li><li>Design tokens and component libraries</li></ul></article>
+</div></section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Services</h2>
-                <div class="services-grid" id="services-grid">
-                    <!-- Service cards loaded from JSON -->
-                </div>
-            </div>
-        </section>
+<section id="projects" class="container"><h2 class="section-title">Projects</h2>
+<div class="grid cols-3">
+<article class='card'><h3>Enterprise Data Modernization</h3><p class='muted'>Optimized ETL pipelines (Presto/Oracle) to cut runtime from ~2 weeks to 4 days with reliability and observability improvements.</p></article><article class='card'><h3>Analytics‑Enabled Portals</h3><p class='muted'>React/Next.js portals with embedded analytics, RBAC, and secure data access for business users.</p></article><article class='card'><h3>AI‑Driven Internal Tools</h3><p class='muted'>Automation assistants and extractors that accelerate operations without adding headcount.</p></article>
+</div></section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid" id="projects-grid">
-                    <!-- Project cards loaded from JSON -->
-                </div>
-            </div>
-        </section>
+<section id="process" class="container"><h2 class="section-title">Process</h2>
+<div class="grid cols-2"><div class="card"><ol class="muted" style="margin:0; padding-left:18px">
+<li><strong>Discover</strong> — Align on goals, constraints, and success metrics.</li><li><strong>Design</strong> — Prototype quickly to validate direction and reduce risk.</li><li><strong>Develop</strong> — Build clean, scalable systems with pragmatic trade‑offs.</li><li><strong>Deploy & Iterate</strong> — Measure outcomes; refine continuously.</li>
+</ol></div></div></section>
 
-        <!-- Process Section -->
-        <section id="process" class="process-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Process</h2>
-                <div class="process-timeline" id="process-timeline">
-                    <!-- Process steps loaded from JSON -->
-                </div>
-            </div>
-        </section>
+<section id="contact" class="container"><h2 class="section-title">Contact</h2>
+<form class="card" aria-labelledby="contact" name="contact" method="post"><label> Name<br><input required name="name" autocomplete="name" style="width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb"></label><br><br>
+<label> Email<br><input required type="email" name="email" autocomplete="email" style="width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb"></label><br><br>
+<label> Message<br><textarea required name="message" rows="5" style="width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb"></textarea></label><br>
+<button class="cta" type="submit">Send Message →</button></form>
+<p class="muted" style="margin-top:12px">Prefer email? <a href="mailto:hello@peek.consulting">hello@peek.consulting</a></p>
+</section>
+</main>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <h2 class="section-title" id="contact-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                    <div class="contact-info">
-                        <p class="contact-email">
-                            <strong>Email:</strong> <a href="mailto:hello@peek.consulting" id="contact-email">hello@peek.consulting</a>
-                        </p>
-                        <div class="social-links" id="social-links">
-                            <!-- Social links loaded from JSON -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+<footer><div class="container"><p>Peek Projects LLC · Building Intelligence That Works.</p><p><a href="mailto:hello@peek.consulting">hello@peek.consulting</a></p></div></footer>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p class="footer-tagline" id="footer-tagline">
-                <!-- Footer tagline loaded from JSON -->
-            </p>
-            <p class="footer-copyright">
-                &copy; <span id="current-year"></span> Peek Projects LLC. All rights reserved.
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.159/build/three.min.js"></script>
-    <script src="main.js" type="module"></script>
-</body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+<script type="module" src="main.js"></script>
+</body></html>
