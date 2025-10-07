@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "headline": "Where Engineering Meets Understanding.",
+    "subtext": "Peek Projects helps businesses translate vision into intelligent, data-driven solutions.",
+    "cta": {
+      "text": "Get Started",
+      "target": "#contact"
+    }
+  },
+  "about": {
+    "title": "About Isaiah Peek",
+    "paragraphs": [
+      "Senior Application Architect turned founder",
+      "7+ years building data pipelines, automation systems, intelligent web apps",
+      "Finance + data architecture domain experience",
+      "Skills: Python, JavaScript (React/Next.js), SQL, AI model integration",
+      "Also offering: iOS (SwiftUI) and cross-platform app development"
+    ],
+    "tagline": "Technology should reflect the rhythm of business, not interrupt it."
+  },
+  "services": [
+    {
+      "title": "Web & App Development",
+      "summary": "React/Next.js sites, REST/GraphQL APIs, iOS SwiftUI builds",
+      "bullets": [
+        "Modern React and Next.js applications",
+        "RESTful and GraphQL API design",
+        "iOS development with SwiftUI",
+        "Cross-platform solutions"
+      ]
+    },
+    {
+      "title": "AI Integrations & Automation",
+      "summary": "OpenAI/Claude/custom models, chatbots, summarizers, data extraction",
+      "bullets": [
+        "Custom AI model integration",
+        "Intelligent chatbots and assistants",
+        "Document summarization and extraction",
+        "Workflow automation"
+      ]
+    },
+    {
+      "title": "Data & System Architecture",
+      "summary": "ETL design, Power BI/Fabric, Azure/AWS integration",
+      "bullets": [
+        "ETL pipeline design and optimization",
+        "Power BI and Microsoft Fabric",
+        "Cloud architecture (Azure/AWS)",
+        "Database design and optimization"
+      ]
+    },
+    {
+      "title": "Business Discovery & Consulting",
+      "summary": "Process audits, automation blueprints, technical strategy docs",
+      "bullets": [
+        "Business process analysis",
+        "Automation opportunity assessment",
+        "Technical strategy documentation",
+        "Digital transformation roadmaps"
+      ]
+    },
+    {
+      "title": "UX Prototyping & Product Design",
+      "summary": "Figma wireframes, clickable demos, user testing",
+      "bullets": [
+        "Figma wireframes and prototypes",
+        "Interactive clickable demos",
+        "User testing and research",
+        "Design system development"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Enterprise Data Modernization",
+      "description": "ETL cut from 2 weeks → 4 days"
+    },
+    {
+      "title": "React/Next.js Portals",
+      "description": "With integrated analytics"
+    },
+    {
+      "title": "AI-Driven Internal Automation",
+      "description": "Tools for streamlined operations"
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Discover",
+      "description": "Understanding your business needs and technical requirements"
+    },
+    {
+      "step": 2,
+      "title": "Design",
+      "description": "Creating prototypes and architecture blueprints"
+    },
+    {
+      "step": 3,
+      "title": "Develop",
+      "description": "Building robust, scalable solutions"
+    },
+    {
+      "step": 4,
+      "title": "Deploy & Iterate",
+      "description": "Launching and continuously improving"
+    }
+  ],
+  "contact": {
+    "title": "Get In Touch",
+    "email": "hello@peek.consulting",
+    "social": {
+      "linkedin": "https://linkedin.com/in/isaiahpeek",
+      "github": "https://github.com/isaiahpeek",
+      "instagram": "https://instagram.com/peekprojects"
+    }
+  },
+  "footer": {
+    "tagline": "Peek Projects LLC · Building Intelligence That Works."
+  }
+}
