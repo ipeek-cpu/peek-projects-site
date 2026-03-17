@@ -1,1 +1,0 @@
-Optional: add hero-fallback.jpg and icons here.

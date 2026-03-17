@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/postcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --bg: #06060a;
+  --bg-elevated: #0c0c14;
+  --bg-card: #10101c;
+  --text: #e8e6e3;
+  --text-dim: #8a8894;
+  --text-muted: #55536a;
+  --accent: #4af0c0;
+  --accent-dim: #2a9e7e;
+  --accent-hover: #3dd8ab;
+  --accent-glow: rgba(74, 240, 192, 0.15);
+  --accent2: #6e6eff;
+  --accent2-glow: rgba(110, 110, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-accent: rgba(74, 240, 192, 0.3);
+  --border-accent-hover: rgba(74, 240, 192, 0.7);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-card: var(--bg-card);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent2: var(--accent2);
+  --color-border: var(--border);
+  --color-border-accent: var(--border-accent);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body), sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(74, 240, 192, 0.25);
+    color: #ffffff;
+  }
+}
