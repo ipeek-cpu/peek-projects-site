@@ -211,9 +211,9 @@ export const contactInfo = {
     "If your business needs an AI agent deployed in a regulated environment, a production data platform, or a system that operates without you — let's talk.",
   email: "isaiah@peek.consulting",
   socials: [
-    { label: "LinkedIn", href: "https://linkedin.com/in/isaiahpeek" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/ipeek" },
     { label: "GitHub", href: "https://github.com/ipeek-cpu" },
-    { label: "X", href: "https://x.com/isaiahpeek" },
+    { label: "X", href: "https://x.com/marshallpeek" },
   ],
 } as const;
 
