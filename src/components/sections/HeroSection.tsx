@@ -99,9 +99,9 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Stats row — pinned to bottom */}
+      {/* Stats row — pinned to bottom on desktop, in-flow on mobile */}
       <div
-        className="absolute bottom-10 left-0 right-0 flex flex-wrap items-end gap-8 md:gap-12 reveal"
+        className="md:absolute md:bottom-10 md:left-0 md:right-0 grid grid-cols-2 gap-6 md:flex md:flex-wrap md:items-end md:gap-12 reveal"
         style={{ padding: "0 5vw" }}
       >
         {heroContent.stats.map((stat) => (
