@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
-import { syne, spaceMono, dmSans } from "@/lib/fonts";
+import { inter, jetbrainsMono } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Peek Projects — AI Agents That Run Real Businesses",
+  title: "peek.consulting — Systems from working-in-demo to running-in-production",
   description:
-    "Isaiah Peek deploys autonomous AI agent systems in regulated, high-stakes environments. Voice AI, case intelligence, workflow automation — in production, today.",
+    "Senior engineering for founders and teams who need their next product, system, or AI build to actually work — and last.",
   openGraph: {
-    title: "Peek Projects",
-    description: "AI agents that run real businesses.",
+    title: "peek.consulting",
+    description:
+      "I take systems from working-in-demo to running-in-production.",
     url: "https://peek.consulting",
-    siteName: "Peek Projects",
+    siteName: "peek.consulting",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Peek Projects",
-    description: "AI agents that run real businesses.",
+    title: "peek.consulting",
+    description:
+      "I take systems from working-in-demo to running-in-production.",
   },
 };
 
@@ -26,10 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${syne.variable} ${spaceMono.variable} ${dmSans.variable}`}
-    >
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>{children}</body>
     </html>
   );

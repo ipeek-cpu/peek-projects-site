@@ -2,42 +2,37 @@ import { getAllPosts } from "@/lib/mdx";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog — Peek Projects",
+  title: "Writing — peek.consulting",
   description:
-    "Thoughts on AI agents, data engineering, and building things that work.",
+    "Notes on shipping production systems, AI agents, and the engineering decisions behind them.",
 };
 
 export default function BlogIndex() {
   const posts = getAllPosts();
 
   return (
-    <div
-      className="min-h-screen"
-      style={{ background: "#06060a", padding: "120px 5vw 80px" }}
-    >
+    <div className="min-h-screen" style={{ padding: "120px 24px 80px" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-        {/* Back link */}
         <Link
           href="/"
+          className="font-mono"
           style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
-            letterSpacing: "0.08em",
-            color: "#4af0c0",
-            textDecoration: "none",
+            fontSize: "0.75rem",
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "var(--accent)",
             marginBottom: "48px",
             display: "inline-block",
           }}
         >
-          &larr; Back
+          ← Back
         </Link>
 
         <h1
           style={{
-            fontFamily: "var(--font-heading)",
             fontSize: "clamp(2rem, 3.5vw, 3rem)",
-            fontWeight: 800,
-            color: "#ffffff",
+            fontWeight: 700,
+            color: "var(--text)",
             lineHeight: 1.1,
             letterSpacing: "-0.03em",
             marginBottom: "48px",
@@ -47,44 +42,36 @@ export default function BlogIndex() {
         </h1>
 
         {posts.length === 0 ? (
-          <p
-            style={{
-              fontFamily: "var(--font-body)",
-              color: "#8a8894",
-              fontSize: "0.95rem",
-            }}
-          >
+          <p style={{ color: "var(--text-dim)", fontSize: "1rem" }}>
             No posts yet.
           </p>
         ) : (
-          <div className="flex flex-col gap-0">
+          <div className="flex flex-col">
             {posts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block transition-colors duration-200"
+                className="block"
                 style={{
-                  textDecoration: "none",
                   padding: "24px 0",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.06)",
+                  borderBottom: "1px solid var(--border)",
                 }}
               >
                 <div className="flex items-baseline justify-between gap-4">
                   <h2
                     style={{
-                      fontFamily: "var(--font-heading)",
                       fontSize: "1.1rem",
-                      fontWeight: 700,
-                      color: "#ffffff",
+                      fontWeight: 600,
+                      color: "var(--text)",
                     }}
                   >
                     {post.title}
                   </h2>
                   <span
+                    className="font-mono"
                     style={{
-                      fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
-                      color: "rgba(138, 136, 148, 0.6)",
+                      fontSize: "0.7rem",
+                      color: "var(--text-muted)",
                       whiteSpace: "nowrap",
                     }}
                   >
@@ -93,9 +80,8 @@ export default function BlogIndex() {
                 </div>
                 <p
                   style={{
-                    fontFamily: "var(--font-body)",
-                    color: "#8a8894",
-                    fontSize: "0.85rem",
+                    color: "var(--text-dim)",
+                    fontSize: "0.92rem",
                     lineHeight: 1.5,
                     marginTop: "6px",
                   }}
