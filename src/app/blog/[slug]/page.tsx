@@ -17,7 +17,7 @@ export async function generateMetadata({
   const post = getPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.meta.title} — Peek Projects`,
+    title: `${post.meta.title} — peek.consulting`,
     description: post.meta.description,
   };
 }
@@ -26,11 +26,10 @@ const mdxComponents = {
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       style={{
-        fontFamily: "var(--font-heading)",
-        fontSize: "2rem",
-        fontWeight: 800,
-        color: "#ffffff",
-        lineHeight: 1.2,
+        fontSize: "1.9rem",
+        fontWeight: 700,
+        color: "var(--text)",
+        lineHeight: 1.15,
         letterSpacing: "-0.03em",
         margin: "2rem 0 1rem",
       }}
@@ -40,10 +39,9 @@ const mdxComponents = {
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       style={{
-        fontFamily: "var(--font-heading)",
-        fontSize: "1.5rem",
+        fontSize: "1.4rem",
         fontWeight: 700,
-        color: "#ffffff",
+        color: "var(--text)",
         lineHeight: 1.2,
         letterSpacing: "-0.02em",
         margin: "2rem 0 0.75rem",
@@ -54,10 +52,9 @@ const mdxComponents = {
   h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       style={{
-        fontFamily: "var(--font-heading)",
-        fontSize: "1.2rem",
+        fontSize: "1.15rem",
         fontWeight: 700,
-        color: "#ffffff",
+        color: "var(--text)",
         margin: "1.5rem 0 0.5rem",
       }}
       {...props}
@@ -66,9 +63,8 @@ const mdxComponents = {
   p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p
       style={{
-        fontFamily: "var(--font-body)",
-        color: "#8a8894",
-        fontSize: "0.95rem",
+        color: "var(--text-dim)",
+        fontSize: "1rem",
         lineHeight: 1.7,
         margin: "0 0 1.25rem",
       }}
@@ -76,34 +72,33 @@ const mdxComponents = {
     />
   ),
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
-    <a
-      style={{ color: "#4af0c0", textDecoration: "underline" }}
-      {...props}
-    />
+    <a style={{ color: "var(--accent)", textDecoration: "underline" }} {...props} />
   ),
   code: (props: React.HTMLAttributes<HTMLElement>) => (
     <code
+      className="font-mono"
       style={{
-        fontFamily: "var(--font-mono)",
-        fontSize: "0.85rem",
-        color: "#4af0c0",
-        background: "rgba(255, 255, 255, 0.05)",
+        fontSize: "0.88rem",
+        color: "var(--accent)",
+        background: "var(--surface-2)",
         padding: "2px 6px",
+        borderRadius: "4px",
       }}
       {...props}
     />
   ),
   pre: (props: React.HTMLAttributes<HTMLPreElement>) => (
     <pre
+      className="font-mono"
       style={{
-        background: "#10101c",
-        border: "1px solid rgba(255, 255, 255, 0.06)",
-        padding: "24px",
+        background: "var(--surface)",
+        border: "1px solid var(--border)",
+        padding: "20px",
         overflow: "auto",
         margin: "1.5rem 0",
-        fontFamily: "var(--font-mono)",
         fontSize: "0.85rem",
         lineHeight: 1.6,
+        borderRadius: "8px",
       }}
       {...props}
     />
@@ -111,11 +106,10 @@ const mdxComponents = {
   blockquote: (props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
     <blockquote
       style={{
-        borderLeft: "3px solid #4af0c0",
-        paddingLeft: "1rem",
+        borderLeft: "2px solid var(--accent)",
+        paddingLeft: "1.25rem",
         margin: "1.5rem 0",
-        fontStyle: "italic",
-        color: "#8a8894",
+        color: "var(--text)",
       }}
       {...props}
     />
@@ -132,35 +126,29 @@ export default async function BlogPost({
   if (!post) notFound();
 
   return (
-    <div
-      className="min-h-screen"
-      style={{ background: "#06060a", padding: "120px 5vw 80px" }}
-    >
+    <div className="min-h-screen" style={{ padding: "120px 24px 80px" }}>
       <article style={{ maxWidth: "700px", margin: "0 auto" }}>
-        {/* Back link */}
         <Link
           href="/blog"
+          className="font-mono"
           style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
-            letterSpacing: "0.08em",
-            color: "#4af0c0",
-            textDecoration: "none",
-            marginBottom: "32px",
+            fontSize: "0.75rem",
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "var(--accent)",
+            marginBottom: "48px",
             display: "inline-block",
           }}
         >
-          &larr; Back to Writing
+          ← Back to writing
         </Link>
 
-        {/* Post header */}
         <h1
           style={{
-            fontFamily: "var(--font-heading)",
-            fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-            fontWeight: 800,
-            color: "#ffffff",
-            lineHeight: 1.15,
+            fontSize: "clamp(1.9rem, 3.2vw, 2.6rem)",
+            fontWeight: 700,
+            color: "var(--text)",
+            lineHeight: 1.1,
             letterSpacing: "-0.03em",
             marginBottom: "12px",
           }}
@@ -168,18 +156,17 @@ export default async function BlogPost({
           {post.meta.title}
         </h1>
         <p
+          className="font-mono"
           style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
-            letterSpacing: "0.08em",
-            color: "rgba(138, 136, 148, 0.6)",
+            fontSize: "0.75rem",
+            letterSpacing: "0.1em",
+            color: "var(--text-muted)",
             marginBottom: "48px",
           }}
         >
           {post.meta.date}
         </p>
 
-        {/* MDX Content */}
         <MDXRemote source={post.content} components={mdxComponents} />
       </article>
     </div>
