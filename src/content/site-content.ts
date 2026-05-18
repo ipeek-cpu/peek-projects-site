@@ -67,8 +67,7 @@ export const booking = {
   heading: "Book a discovery call",
   description:
     "30-minute call. Best fit if you're a founder or team with a real engineering problem to solve — a product to build, an MVP to harden, an AI agent to deploy, or a tangle of systems to replace with something owned. Free.",
-  // TODO: replace with real Calendly URL before launch.
-  calendlyUrl: "https://calendly.com/peek-consulting/discovery-call",
+  calendlyUrl: "https://calendly.com/isaiah-peek/30min",
 };
 
 export const nav = {

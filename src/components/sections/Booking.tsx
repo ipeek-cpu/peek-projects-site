@@ -55,16 +55,16 @@ export function Booking() {
               style={{
                 border: "1px solid var(--border)",
                 background: "var(--surface)",
-                minHeight: "640px",
+                minHeight: "700px",
               }}
             >
               <iframe
                 src={`${booking.calendlyUrl}?embed_domain=peek.consulting&embed_type=Inline&hide_event_type_details=0&background_color=141414&text_color=fafafa&primary_color=22d3ee`}
                 title="Book a discovery call"
                 width="100%"
-                height="640"
+                height="700"
                 frameBorder={0}
-                style={{ display: "block", colorScheme: "dark" }}
+                style={{ display: "block", colorScheme: "dark", minWidth: 320 }}
               />
             </div>
           </Reveal>
