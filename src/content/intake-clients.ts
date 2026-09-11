@@ -18,8 +18,8 @@ export type IntakeClient = {
 
 export const intakeClients: IntakeClient[] = [
   {
-    // Rename this slug before sending the link.
-    slug: "site-build",
+    slug: "bayla",
+    firstName: "Bayla",
     callAt: "2026-09-14T11:30:00-04:00",
   },
 ];
